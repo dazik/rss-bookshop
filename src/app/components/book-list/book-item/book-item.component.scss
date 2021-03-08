@@ -1,0 +1,12 @@
+.book-card {
+  border: 1px solid #111;
+  margin: .5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.card-img img {
+  width: 100%;
+}

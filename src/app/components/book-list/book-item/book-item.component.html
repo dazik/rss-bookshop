@@ -1,0 +1,9 @@
+<div class="book-card" #child>
+  <h2 class="card-heading">{{ book.name }}</h2>
+  <div class="card-img">
+    <img [src]="book.imageUrl" alt="">
+  </div>
+  <p class="card-description">{{ book.description }}</p>
+  <p class="card-price">{{ book.price }}$</p>
+  <button (click) = "addToCart(book)">Add to cart</button>
+</div>

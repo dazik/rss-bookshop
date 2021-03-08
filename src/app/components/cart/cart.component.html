@@ -1,0 +1,13 @@
+<h4>Cart</h4>
+<ul>
+  <div *ngIf="cart.length < 1">Cart is empty</div>
+  <li *ngFor="let item of cart; let i=index">
+    <app-cart-item
+[item] = "item" [index] = "i"
+(removeFromCart)="removeFromCart($event)"
+(increaseQuantity)="increaseQuantity($event)"
+(decreaseQuantity)="decreaseQuantity($event)"
+></app-cart-item>
+  </li>
+</ul>
+<b>Total sum:</b> {{ totalPrice }}

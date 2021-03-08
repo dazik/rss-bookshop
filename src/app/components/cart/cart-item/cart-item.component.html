@@ -1,0 +1,6 @@
+<h5>{{ item.name }}</h5>
+<button (click)="increaseQuantity.emit(index)">+</button>
+{{ item.quantity }}
+<button (click)="decreaseQuantity.emit(index)">-</button>
+<button (click)="removeFromCart.emit(index)">remove</button>
+<p>Price: {{ item.price*item.quantity }}$</p>

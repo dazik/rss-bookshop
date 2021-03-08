@@ -1,0 +1,10 @@
+.cards-container {
+  max-width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+app-book-item {
+  display: flex;
+  max-width: 30%;
+}
